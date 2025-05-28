@@ -2,9 +2,10 @@
   host:local
   connection:local
   task:
-  - name:print the hello world
+    - name:print the hello world
     ansible.builtin.debug:
       msg:"Hello World"
+
 
 
   #- name: hello world
