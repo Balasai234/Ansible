@@ -6,5 +6,6 @@
    Duration: 10hr
   tasks:
   - name: Print the Varaiables
+    courseName: AWS
     ansible.builtin.debug:
      msg: "Hello Course: {{ courseName}} and Duration:{{Duration}}"
