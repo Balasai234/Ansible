@@ -1,0 +1,17 @@
+- name: data-type
+  hosts: local
+  vars:
+   Duration: 110h
+   Course: AWS
+   Is_Live: yes
+   TOOLS:
+   - Linux
+   - Shell
+   - ansible
+   Concept:
+   CI: Jenkins
+   Dev: "Script, ansible"
+  tasks:
+  - name: Data-type
+    ansible.builtin.debug:
+     msg: "Hello {{ Course }}, Duration:{{ Duration }}, Is_Live:{{ Is_Live }}, TOOLS:{{ TOOLS }}, Concept: {{ Concept }}" 
