@@ -4,19 +4,19 @@
   tasks:
   - name: Print Hello
     ansible.builtin.debug:
-      msg: "hello"
+     msg: "hello"
   - name: Print Hello-1
     ansible.builtin.debug:
-      msg: "hello-01"
+     msg: "hello-01"
 
 - name: play2
   hosts: local
   connection: local
   tasks:
-   - name: Print Hello-2
-     ansible.builtin.debug:
+  - name: Print Hello-2
+    ansible.builtin.debug:
       msg "hello-2"
-   - name: Print Hello-3
-     ansible.builtin.debug:
+  - name: Print Hello-3
+    ansible.builtin.debug:
       msg "hello-3"
 
