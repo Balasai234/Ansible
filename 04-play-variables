@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-   name: ansible
+   courseName: ansible
    Duration: 10hr
   tasks:
   - name: Print the Varaiables
     ansible.builtin.debug:
-     msg: "Hello Course: {{name}} and Duration:{{Hours}}"
+     msg: "Hello Course: {{ courseName}} and Duration:{{Hours}}"
