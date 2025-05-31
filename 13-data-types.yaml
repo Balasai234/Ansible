@@ -1,5 +1,6 @@
 - name: data-type
   hosts: local
+  connection: local
   vars:
    Duration: 110h
    Course: AWS
