@@ -1,0 +1,9 @@
+- name: vars-files
+  hosts: local
+  connection: local
+  vars-files:
+   courseName: Devops
+  Tasks:
+  - name: vars-files
+    ansible.builtin.debug:
+     msg: "Hello courseName: {{courseName}} and Duration:{{}} and Trainer:{{}}"
