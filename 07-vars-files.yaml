@@ -1,10 +1,10 @@
-- name: vars-files
+- name: Varaiables is pulled from another file
   hosts: local
   connection: local
   vars-files:
   - vars-files.yaml
-  
+
   Tasks:
-  - name: vars-files
+  - name: Varaiables is pulled from another file
     ansible.builtin.debug:
      msg: "Hello courseName: {{ courseName }} and Duration:{{ Duration }} and Trainer:{{ Trainer }}"
