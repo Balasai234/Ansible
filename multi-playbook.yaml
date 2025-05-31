@@ -3,10 +3,10 @@
   connection: local
   task:
   - name: Print Hello
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "hello"
   - name: Print Hello-1
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "hello-01"
 
 - name: play2
