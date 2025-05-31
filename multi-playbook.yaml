@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   task:
-   - name: Print Hello
+  - name: Print Hello
      ansible.builtin.debug:
       msg: "hello"
-   - name: Print Hello-1
+  - name: Print Hello-1
      ansible.builtin.debug:
       msg: "hello-01"
 
@@ -19,5 +19,4 @@
    - name: Print Hello-3
      ansible.builtin.debug:
       msg "hello-3"
-      
-            
+
