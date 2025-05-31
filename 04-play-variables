@@ -7,4 +7,4 @@
   tasks:
   - name: Print the Varaiables
     ansible.builtin.debug:
-     msg: "Hello Course: {{ courseName}} and Duration:{{Hours}}"
+     msg: "Hello Course: {{ courseName}} and Duration:{{Duration}}"
