@@ -2,8 +2,9 @@
   hosts: local
   connection: local
   vars-files:
-   courseName: Devops
+  - vars-files.yaml
+  
   Tasks:
   - name: vars-files
     ansible.builtin.debug:
-     msg: "Hello courseName: {{courseName}} and Duration:{{}} and Trainer:{{}}"
+     msg: "Hello courseName: {{ courseName }} and Duration:{{ Duration }} and Trainer:{{ Trainer }}"
