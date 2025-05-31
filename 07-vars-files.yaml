@@ -3,7 +3,7 @@
   connection: local
   vars_files:
   - vars-files.yaml
-  Tasks:
+  tasks:
    - name: Varaiables is pulled from another file
      ansible.builtin.debug:
       msg: "Hello courseName:{{courseName}} and Duration:{{Duration}} and Trainer:{{Trainer}}"
