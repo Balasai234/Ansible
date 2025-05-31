@@ -13,4 +13,4 @@
   tasks:
   - name: Prompt
     ansible.builtin.debug:
-     msg: "Hello USERNAME:{{USERNAME}}, Password:{{ Password }}"" 
+     msg: "Hello USERNAME:{{ USERNAME }}, Password:{{ Password }}" 
