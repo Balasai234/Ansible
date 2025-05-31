@@ -1,7 +1,7 @@
 - name : Prompt
   hosts: local
   connection: local
-  vars_promt:
+  vars_prompt:
   - name: USERNAME
     prompt: Please enter the USERNAME
     private: true
@@ -13,4 +13,4 @@
   tasks:
   - name: Prompt
     ansible.builtin.debug:
-     msg: "Hello USERNAME:{{ USERNAME }}, Password:{{ Password }}" 
+     msg:"Hello USERNAME:{{ USERNAME }}, Password:{{ Password }}" 
