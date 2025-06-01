@@ -5,8 +5,10 @@
   - name: loops
     ansible.builtin.debug:
      msg: "Hello print {{item}}" # item is keyword for loop#
-     loop:
-     - suresh
-     - sai
-     - Vamsi
-     - Manoj
+    loop:
+    - suresh
+    - sai
+    - Vamsi
+    - Manoj
+
+
