@@ -1,0 +1,13 @@
+- name: Condition
+  hosts: frontend
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+     name: nginx
+     state: present
+    when: ansible_os_family == "Red Hat"
+  - name: install nginx
+    ansible.builtin.apt:
+     name: nginx
+     state: present
+    when: ansible_os_family == "Debian"
