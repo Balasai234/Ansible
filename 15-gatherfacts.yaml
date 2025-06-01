@@ -1,0 +1,7 @@
+- name: Gather facts example
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - name: Show OS Family
+      debug:
+        var: ansible_os_family
