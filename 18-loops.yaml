@@ -3,9 +3,9 @@
   tasks:
   - name: loops_pack
     ansible.builtin.package:
-     msg: "{{item}}"
+     name: "{{item}}"
+     state: installed
     loop:
     - mysql
     - zip
     - nginx
-    
